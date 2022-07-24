@@ -1,5 +1,37 @@
-.image {
-    background-image: url('../../assets/Rectangle\ 2.png');
-    background-size: 100% 100%;
+.banner-image {
+    max-width: 100%;
+    min-height: 440px;
+    background-color: pink;
+    background-image: url(../../assets/Rectangle\ 2.png);
     background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%);
+    max-width: 100%;
+    min-height: 440px;
+}
+
+.banner-image>div>h2 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #FFFFFF;
+    position: absolute;
+    height: 47px;
+    left: 200px;
+    top: 286px;
+
+
+}
+
+.banner-image>div>p {
+    color: #FFFFFF;
+    font-weight: 400;
+    position: absolute;
+    height: 23px;
+    left: 200px;
+    top: 337px;
+    bottom: 80px;
 }

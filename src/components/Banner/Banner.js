@@ -4,9 +4,14 @@ import styles from './Banner.css'
 
 const Banner = () => {
     return (
-        <div className='image-overlay'>
-            <div className=''></div>
-            <h1>Computer Engineering</h1>
+        <div className='banner-image'>
+            <div className='overlay'>
+                <h2>Computer Engineering</h2>
+                <p>142,765 Computer Engineers follow this</p>
+            </div>
+
+
+
         </div>
     );
 };

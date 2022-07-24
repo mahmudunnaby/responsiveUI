@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
 
-                    <div className=" ps-2 input-group search-box  d-flex justify-content-center align-items-center">
+                    <div className=" ps-3 input-group search-box  d-flex justify-content-center align-items-center">
                         <AiOutlineSearch />
 
                         <input type="text" className="form-control  mx-3" id='search-box-2' placeholder='Search for your favorite groups in ATG' />
