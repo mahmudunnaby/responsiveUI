@@ -1,0 +1,62 @@
+.menu-list {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+}
+
+.menu-items {
+    margin-right: 20px;
+    margin-top: 47px;
+
+    cursor: pointer;
+}
+
+.menu-items:hover {
+    font-weight: bold;
+
+}
+
+.btn-text {
+    font-weight: 500;
+    background: #EDEEF0;
+    margin-right: 16px;
+}
+
+.image-icon {
+    Width: 22px;
+    Height: 11.92px;
+    margin-right: 6px;
+}
+
+.underline {
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    margin-top: 20px;
+
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #000000;
+
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
