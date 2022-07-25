@@ -4,6 +4,7 @@ import './App.css';
 import Banner from './components/Banner/Banner';
 import Menu from './components/Menu/Menu';
 import Posts from './components/Posts/Posts';
+import Body from './components/Posts/Body';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <Menu></Menu>
+      <Body></Body>
 
     </div>
   );

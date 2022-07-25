@@ -17,7 +17,7 @@ const Posts = () => {
     return (
         <div>
             {products.length}
-            {posts.map(post => <Post key={post._id} post={post}></Post>)}
+            {posts.map(post => <Post key={post._id} post={post}> </Post>)}
         </div>
     );
 };

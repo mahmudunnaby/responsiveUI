@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Menu.css'
 import { AiFillCaretDown } from 'react-icons/ai';
 import add from '../../assets/Vector.png'
-import Posts from '../Posts/Posts';
+
 
 const Menu = () => {
     return (
@@ -28,7 +28,7 @@ const Menu = () => {
                 </div>
             </div>
             <div className='underline'></div>
-            <Posts></Posts>
+
         </div>
     );
 };
