@@ -2,26 +2,40 @@ import React from 'react';
 import { BiDotsHorizontalRounded } from 'react-icons/bi';
 import { AiOutlineEye } from 'react-icons/ai';
 import { BsShareFill } from 'react-icons/bs';
+import { MdOutlinePlace } from 'react-icons/md';
+import { BsBriefcase } from 'react-icons/bs';
+import { MdDateRange } from 'react-icons/md';
 import Dropdown from 'react-bootstrap/Dropdown';
-import styles from './Post.css'
+import styles from './Postssecondtype.css'
 
 
-
-const Post = ({ post }) => {
-    const { picture, topic, name, heading, details, image } = post
+const Postsecondtype = ({ post }) => {
+    const { picture, topic, name, heading, details, image, place, company, date } = post
     return (
         <div className="card mb-3">
-            <img src={picture} className="card-img-top" alt="..." />
+
+            {picture && <img src={picture} className="card-img-top" alt="..." />}
             <div className="card-body">
                 <h5 className='topic'>{topic}</h5>
                 <div className=' d-flex justify-content-between align-items-center'>
-                    <h5 className="card-title heading">{heading}</h5>
+                    <div>
+                        <h5 className="card-title heading">{heading}</h5>
+                        <div className='d-flex justify-content-start align-items-center'>
+                            {date && <div className=' d-flex justify-content-center align-items-center'> <MdDateRange className='me-2 mb-3' /> <p className='text-property'>{date}</p> </div> || company && <div className=' d-flex justify-content-center align-items-center'> <BsBriefcase className='mb-3 me-2' /> <p className='text-property'>{company}</p></div>}
+
+                            <div className='ms-5 d-flex justify-content-center align-items-center'>
+                                <MdOutlinePlace className='mb-3' />
+                                <p className='text-property '>{place}</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <div>
 
 
-                        <Dropdown >
+                        <Dropdown>
 
-                            <Dropdown.Toggle className='dropdown-clr' variant="light" id="dropdown-basic">
+                            <Dropdown.Toggle variant="light" id="dropdown-basic">
                                 <BiDotsHorizontalRounded />
                             </Dropdown.Toggle>
 
@@ -34,7 +48,10 @@ const Post = ({ post }) => {
                     </div>
 
                 </div>
-                <p className="card-text">{details}</p>
+                <div className="d-grid gap-2">
+                    {company && <button className="btn btn-outline btn-text" type="button">{details}</button> ||
+                        <button className="btn btn-outline btn-text-2 " type="button">{details}</button>}
+                </div>
                 <div className=' d-flex justify-content-between align-items-center'>
                     <div className='d-flex justify-content-between align-items-center'>
                         <img src={image} alt="" />
@@ -55,4 +72,4 @@ const Post = ({ post }) => {
     );
 };
 
-export default Post;
+export default Postsecondtype;

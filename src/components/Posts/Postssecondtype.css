@@ -1,0 +1,15 @@
+.text-property {
+    font-weight: 500;
+}
+
+.btn-text {
+    color: #02B875;
+    border: .7px solid #A9AEB8;
+    font-weight: 600
+}
+
+.btn-text-2 {
+    color: #E56135;
+    border: .7px solid #A9AEB8;
+    font-weight: 600
+}
